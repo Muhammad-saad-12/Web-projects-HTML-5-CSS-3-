@@ -1,0 +1,52 @@
+    body{
+        background-image: url(images/coffee_background.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        padding: 20px;
+    }
+    h1{
+        font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h1,h2,p{
+        text-align: center;
+    }
+    .menu{
+        background-color:rosybrown;
+        width: 80%;
+        margin-right: auto;
+        padding:20px;
+max-width: 500px;
+     margin-left: auto; 
+     border: 3px double black;
+    }
+    hr {
+        height: 3px;
+        background-color: brown;
+        border-color: brown;
+        border-radius: 3px;
+      }
+      .items p{
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      .Flavour{
+        text-align: left;
+        width: 75%;
+      }
+      .Price{
+        text-align: right;
+        width: 20%;
+      }
+      .fot{
+        margin-top: 20px;
+        height: 4px;
+        background-color: brown;
+        border-color: brown;
+        border-radius: 3px;
+      }
