@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="Registration_Form.css">
+</head>
+<body>
+    <h1>Registration form</h1>
+    <p>Plesase fill out the form with the required information</p>
+    <form action="#">
+        <fieldset>
+        <label for="first-name">Enter your first name:
+            <input type="text" id="first-name" name="first-name/">
+        </label>
+        <label for="Last-name">Enter your Last name:
+            <input type="text" id="Last-name" name="Last-name"/>
+        </label>
+        <label for="email">Enter your Email:
+            <input type="email" id="email" name="email" required/>
+        </label>
+        <label for="pass">Enter new password:
+            <input type="password" id="pass" name="pass" pattern="[a-z0-5]{8,}" required/>
+        </label>
+</fieldset>
+    <fieldset>
+        <label for="personal-account">
+            <input type="radio" id="personal-account" name="personal-account" class="inline"/>personal-account</label>
+            <label for="Business-account">
+                <input type="radio" id="Business-account" name="Business-account" class="inline"/>Business-account</label>
+            <label for="terms">
+            <input type="checkbox" id="terms" name="termsAndConditions" class="inline">
+            I accept the <a href="#">terms and conditions</a>
+            </label>
+    </fieldset>
+    <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="10" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Byte-sole</option>
+              <option value="2">Pak coders YouTube Channel</option>
+              <option value="3">Netsole</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on my table..."></textarea>
+          </label>
+    </fieldset>
+    <input type="submit" value="submit here">
+</form>
+</body>
+</html>
