@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+margin-top:40px ;
+
+}
+header{
+    padding:20px 0px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+.content >P{
+    border: 2px solid aqua;
+    background-color: rgba(93, 188, 192, 0.426);
+    margin: 12px;
+    padding: 12px;
+    font-size: 18px;
+}
+span{
+    background-color: cyan;
+}
