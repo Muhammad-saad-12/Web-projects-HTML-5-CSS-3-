@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="letters">
+            <p class="even">D</p>
+            <p class="odd">o</p>
+            <p class="even">n</p>
+            <p class="odd">t</p>
+        </div>
+        <div class="letters">
+            <p class="even">W</p>
+            <p class="odd">o</p>
+            <p class="even">r</p>
+            <p class="odd">r</p>
+            <p class="even">y</p>
+        </div>
+        <div class="letters">
+            <p class="even">B</p>
+            <p class="odd">e</p>
+        </div>
+        <div class="letters">
+            <p class="even">H</p>
+            <p class="odd">a</p>
+            <p class="even">p</p>
+            <p class="odd">p</p>
+            <p class="even">y</p>
+        </div>
+    </div>
+</body>
+
+</html>
+///////////////////////////////////////////////////////////////CSS//////////////////////////////////////////////////////////////////////////////////////////////////
+/* Properties for other selectors */
+* {
+	padding: 0;
+	margin: 0;
+	color: pink;
+}
+  
+.container {
+	min-height: 100vh;
+	background-color:bisque;
+}
+  
+.letters {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+ p{
+    text-align: center;
+    background-color: rgb(250, 150, 100);
+    width: 70px;
+    margin-right: 1.5px;
+    border-radius: 15%;
+    border-style: solid;
+}
+/* Add rules for steps 8 and 9 */
+.letters:hover p:nth-child(even)
+{
+    transform: rotatex(360deg);
+    transition: 0.8s;
+}
+.letters:hover p:nth-child(odd){
+    transform: rotatey(360deg);
+    transition:1.5s;
+}
+/* Add rules for steps 10 and 11 */
